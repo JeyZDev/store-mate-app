@@ -43,7 +43,7 @@ function LoginPage() {
       const userName = form.email.split('@')[0]; 
 
       // 3. ✅ ส่งข้อมูลเข้า Redux (ส่ง token และ userName ที่เราสร้างขึ้น)
-      dispatch(login(token, userName));
+      dispatch(login({ token, name: userName, isAuthenticated: true }));
 
       // 4. บันทึกข้อมูลลง Storage
       // เพิ่ม userName เข้าไปใน Object ที่จะเซฟด้วย เพื่อให้ Refresh แล้วชื่อไม่หาย
