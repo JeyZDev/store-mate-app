@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     }
    
 
-], { basename: '/store-mate-app' });
+], { basename: '/' });
 
 // When the app is hosted at a subpath (GitHub Pages), route matching
 // must use the repository name as the base URL.
